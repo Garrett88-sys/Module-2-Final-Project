@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Tevin Garrett</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">Tevin Garrett</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a class="current" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact</h1>
+
+    <section class="card half">
+      <h2>Send a message</h2>
+      <div id="form-errors"></div>
+      <form action="mailto:tevin.garrett272@gmail.com" method="post" enctype="text/plain" onsubmit="return checkForm()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Your email</label>
+        <input type="text" id="email" name="email">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <button type="submit" class="btn selected">Send</button>
+      </form>
+    </section>
+
+    <section class="card half">
+      <h2>Common questions</h2>
+      <div id="faq"></div>
+    </section>
+  </main>
+
+  <footer>Tevin Garrett - Memphis, TN</footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>
